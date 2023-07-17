@@ -1,0 +1,82 @@
+
+@media only screen and (max-width:1024px) {
+    .container .about-image::before{
+    display: none;
+    }
+    .container .about-image::after{
+    display: none;
+    }
+    .about .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 60px auto;
+    }
+    .about .container .text{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .about .container .text p:last-child::after{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .image {
+        display: none;
+    }
+    .col-group {
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .container .card{
+    width: 100%;
+    }
+    .services > .text h1,
+    .about > .text h1,
+    .contact > .text h1,
+    .portfolio > .text h1 {
+        font-size: 70px;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    /* For phones */
+    .services .container {
+        margin: 30px auto;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service {
+        margin-top: 20px;
+    }
+    .services {
+        padding: 30px 0;
+    }
+    .services .text {
+
+    }
+    .contact .container >h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .contact-text{
+        flex-direction: column;
+        text-align: center;
+        font-size: 15px;
+        gap: 5px;
+    }
+    p , .service .text p{
+        font-size: 15px;
+    }
+    .service .text h3 {
+        font-size: 25px;
+    }
+}
